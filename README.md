@@ -1,157 +1,336 @@
-# Baritone
+# ♥ REESE — a love story in four shades
 
-<p align="center">
-  <a href="https://github.com/cabaletta/baritone/releases/"><img src="https://img.shields.io/github/downloads/cabaletta/baritone/total.svg" alt="GitHub All Releases"/></a>
-</p>
+An 8-bit dating sim / visual novel for Android that looks and plays like a classic
+handheld: the whole phone screen becomes a pocket console with a 4-shade green LCD,
+a working D-pad, A/B and START/SELECT buttons.
 
-<p align="center">
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.12.2-brightgreen.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.13.2-yellow.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.14.4-yellow.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.15.2-yellow.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.16.5-yellow.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.17.1-yellow.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.18.2-yellow.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.19.2-brightgreen.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.19.4-brightgreen.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.20.1-brightgreen.svg" alt="Minecraft"/></a>
-  <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.21.3-brightgreen.svg" alt="Minecraft"/></a>
-</p>
+You play **Elijah Christan Breedlove**, a shy chiptune composer who has 7 days to get
+brave enough to play his song at Open Mic Night — and to get to know **Reese**, the
+witty barista who caught his demo tape. 5 endings.
 
-<p align="center">
-  <a href="https://travis-ci.com/cabaletta/baritone/"><img src="https://travis-ci.com/cabaletta/baritone.svg?branch=master" alt="Build Status"/></a>
-  <a href="https://github.com/cabaletta/baritone/releases/"><img src="https://img.shields.io/github/release/cabaletta/baritone.svg" alt="Release"/></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-LGPL--3.0%20with%20anime%20exception-green.svg" alt="License"/></a>
-  <a href="https://www.codacy.com/gh/cabaletta/baritone/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cabaletta/baritone&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/cadab857dab049438b6e28b3cfc5570e" alt="Codacy Badge"/></a>
-  <a href="https://github.com/cabaletta/baritone/blob/master/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat" alt="Code of Conduct"/></a>
-  <a href="https://snyk.io/test/github/cabaletta/baritone?targetFile=build.gradle"><img src="https://snyk.io/test/github/cabaletta/baritone/badge.svg?targetFile=build.gradle" alt="Known Vulnerabilities"/></a>
-  <a href="https://github.com/cabaletta/baritone/issues/"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome"/></a>
-  <a href="https://github.com/cabaletta/baritone/issues/"><img src="https://img.shields.io/github/issues/cabaletta/baritone.svg" alt="Issues"/></a>
-  <a href="https://github.com/cabaletta/baritone/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/cabaletta/baritone.svg" alt="GitHub issues-closed"/></a>
-  <a href="https://github.com/cabaletta/baritone/pulls/"><img src="https://img.shields.io/github/issues-pr/cabaletta/baritone.svg" alt="Pull Requests"/></a>
-  <a href="https://github.com/cabaletta/baritone/graphs/contributors/"><img src="https://img.shields.io/github/contributors/cabaletta/baritone.svg" alt="GitHub contributors"/></a>
-  <a href="https://github.com/cabaletta/baritone/commit/"><img src="https://img.shields.io/github/commits-since/cabaletta/baritone/v1.0.0.svg" alt="GitHub commits"/></a>
-  <img src="https://img.shields.io/github/languages/code-size/cabaletta/baritone.svg" alt="Code size"/>
-  <img src="https://img.shields.io/github/repo-size/cabaletta/baritone.svg" alt="GitHub repo size"/>
-  <img src="https://tokei.rs/b1/github/cabaletta/baritone?category=code&style=flat" alt="Lines of Code"/>
-  <img src="https://img.shields.io/badge/Badges-36-blue.svg" alt="yes"/>
-</p>
+![Screenshots](docs/preview.png)
 
-<p align="center">
-  <a href="https://impactclient.net/"><img src="https://img.shields.io/badge/Impact%20integration-v1.2.14%20/%20v1.3.8%20/%20v1.4.6%20/%20v1.5.3%20/%20v1.6.3-brightgreen.svg" alt="Impact integration"/></a>
-  <a href="https://github.com/lambda-client/lambda"><img src="https://img.shields.io/badge/Lambda%20integration-v1.2.17-brightgreen.svg" alt="Lambda integration"/></a>
-  <a href="https://github.com/fr1kin/ForgeHax/"><img src="https://img.shields.io/badge/ForgeHax%20%22integration%22-scuffed-yellow.svg" alt="ForgeHax integration"/></a>
-  <a href="https://aristois.net/"><img src="https://img.shields.io/badge/Aristois%20add--on%20integration-v1.6.3-green.svg" alt="Aristois add-on integration"/></a>
-  <a href="https://rootnet.dev/"><img src="https://img.shields.io/badge/rootNET%20integration-v1.2.14-green.svg" alt="rootNET integration"/></a>
-  <a href="https://futureclient.net/"><img src="https://img.shields.io/badge/Future%20integration-v1.2.12%20%2F%20v1.3.6%20%2F%20v1.4.4-red" alt="Future integration"/></a>
-  <a href="https://rusherhack.org/"><img src="https://img.shields.io/badge/RusherHack%20integration-v1.2.14-green" alt="RusherHack integration"/></a>
-</p>
+---
 
-<p align="center">
-  <a href="http://forthebadge.com/"><img src="https://web.archive.org/web/20230604002050/https://forthebadge.com/images/badges/built-with-swag.svg" alt="forthebadge"/></a>
-  <a href="http://forthebadge.com/"><img src="https://web.archive.org/web/20230604002050/https://forthebadge.com/images/badges/mom-made-pizza-rolls.svg" alt="forthebadge"/></a>
-</p>
+## Contents
+1. [Quick start: get the APK on your phone](#1-quick-start-get-the-apk-on-your-phone)
+2. [Building it yourself](#2-building-it-yourself)
+3. [How to play](#3-how-to-play)
+4. [Editing the story (no code needed)](#4-editing-the-story-no-code-needed)
+5. [The characters](#5-the-characters)
+6. [The 5 endings](#6-the-5-endings-spoilers)
+7. [Tech overview, palette and file tree](#7-tech-overview)
+8. [Feature checklist](#8-feature-checklist)
 
-A Minecraft pathfinder bot.
+---
 
-Baritone is the pathfinding system used in [Impact](https://impactclient.net/) since 4.4. [Here's](https://www.youtube.com/watch?v=StquF69-_wI) a (very old!) video I made showing off what it can do.
+## 1. Quick start: get the APK on your phone
 
-[**Baritone Discord Server**](http://discord.gg/s6fRBAUpmr)
+**Option A: GitHub Actions (no computer needed)**
+1. Push this project to a GitHub repository. The workflow in
+   `.github/workflows/build-apk.yml` runs on every push.
+2. Open the repo's **Actions** tab → the latest **Build APK** run → download the
+   **Reese-apk** artifact (a zip containing `Reese.apk`).
+3. *Easier on a phone:* create a tag that starts with `v` (for example `v1.0`, from
+   GitHub's **Releases → Draft a new release** page). The workflow then attaches
+   `Reese.apk` to that release, so you can download it straight from your phone's browser.
 
-**Quick download links:**
+**Install it (sideload)**
+1. On your phone, open the downloaded `Reese.apk`.
+2. Android will ask to allow installs from that app (Chrome / Files). Tap
+   **Settings → Allow from this source**, then go back and tap **Install**.
+3. If Play Protect warns about an unknown developer, tap **More details → Install anyway**.
+   (The app has **no permissions at all**: no internet, no ads, no accounts.)
+4. Open **Reese** from your app drawer.
 
-| Forge                                                                                                          | Fabric                                                                                                           | NeoForge                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [1.12.2 Forge](https://github.com/cabaletta/baritone/releases/download/v1.2.19/baritone-api-forge-1.2.19.jar)  |                                                                                                                  |                                                                                                                      |
-| [1.16.5 Forge](https://github.com/cabaletta/baritone/releases/download/v1.6.5/baritone-api-forge-1.6.5.jar)    | [1.16.5 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.6.5/baritone-api-fabric-1.6.5.jar)    |                                                                                                                      |
-| [1.17.1 Forge](https://github.com/cabaletta/baritone/releases/download/v1.7.3/baritone-api-forge-1.7.3.jar)    | [1.17.1 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.7.3/baritone-api-fabric-1.7.3.jar)    |                                                                                                                      |
-| [1.18.2 Forge](https://github.com/cabaletta/baritone/releases/download/v1.8.6/baritone-api-forge-1.8.6.jar)    | [1.18.2 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.8.6/baritone-api-fabric-1.8.6.jar)    |                                                                                                                      |
-| [1.19.2 Forge](https://github.com/cabaletta/baritone/releases/download/v1.9.4/baritone-api-forge-1.9.4.jar)    | [1.19.2 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.9.4/baritone-api-fabric-1.9.4.jar)    |                                                                                                                      |
-| [1.19.3 Forge](https://github.com/cabaletta/baritone/releases/download/v1.9.1/baritone-api-forge-1.9.1.jar)    | [1.19.3 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.9.1/baritone-api-fabric-1.9.1.jar)    |                                                                                                                      |
-| [1.19.4 Forge](https://github.com/cabaletta/baritone/releases/download/v1.9.6/baritone-api-forge-1.9.6.jar)    | [1.19.4 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.9.6/baritone-api-fabric-1.9.6.jar)    |                                                                                                                      |
-| [1.20.1 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.5/baritone-api-forge-1.10.5.jar)  | [1.20.1 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.5/baritone-api-fabric-1.10.5.jar)  |                                                                                                                      |
-| [1.20.2 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.6/baritone-api-forge-1.10.6.jar)  | [1.20.2 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.6/baritone-api-fabric-1.10.6.jar)  |                                                                                                                      |
-| [1.20.3 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.7/baritone-api-forge-1.10.7.jar)  | [1.20.3 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.7/baritone-api-fabric-1.10.7.jar)  | [1.20.3 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.10.7/baritone-api-neoforge-1.10.7.jar)  |
-| [1.20.4 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.7/baritone-api-forge-1.10.7.jar)  | [1.20.4 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.7/baritone-api-fabric-1.10.7.jar)  | [1.20.4 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.10.7/baritone-api-neoforge-1.10.7.jar)  |
-| [1.20.5 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.8/baritone-api-forge-1.10.8.jar)  | [1.20.5 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.8/baritone-api-fabric-1.10.8.jar)  | [1.20.5 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.10.8/baritone-api-neoforge-1.10.8.jar)  |
-| [1.20.6 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.8/baritone-api-forge-1.10.8.jar)  | [1.20.6 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.8/baritone-api-fabric-1.10.8.jar)  | [1.20.6 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.10.8/baritone-api-neoforge-1.10.8.jar)  |
-| [1.21.1 Forge](https://github.com/cabaletta/baritone/releases/download/v1.11.3/baritone-api-forge-1.11.3.jar)  | [1.21.1 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.11.3/baritone-api-fabric-1.11.3.jar)  | [1.21.1 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.11.3/baritone-api-neoforge-1.11.3.jar)  |
-| [1.21.3 Forge](https://github.com/cabaletta/baritone/releases/download/v1.12.0/baritone-api-forge-1.12.0.jar)  | [1.21.3 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.12.0/baritone-api-fabric-1.12.0.jar)  | [1.21.3 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.12.0/baritone-api-neoforge-1.12.0.jar)  |
-| [1.21.4 Forge](https://github.com/cabaletta/baritone/releases/download/v1.13.1/baritone-api-forge-1.13.1.jar)  | [1.21.4 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.13.1/baritone-api-fabric-1.13.1.jar)  | [1.21.4 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.13.1/baritone-api-neoforge-1.13.1.jar)  |
-| [1.21.5 Forge](https://github.com/cabaletta/baritone/releases/download/v1.14.0/baritone-api-forge-1.14.0.jar)  | [1.21.5 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.14.0/baritone-api-fabric-1.14.0.jar)  | [1.21.5 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.14.0/baritone-api-neoforge-1.14.0.jar)  |
-| [1.21.6 Forge](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-forge-1.15.0.jar)  | [1.21.6 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-fabric-1.15.0.jar)  | [1.21.6 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-neoforge-1.15.0.jar)  |
-| [1.21.7 Forge](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-forge-1.15.0.jar)  | [1.21.7 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-fabric-1.15.0.jar)  | [1.21.7 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-neoforge-1.15.0.jar)  |
-| [1.21.8 Forge](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-forge-1.15.0.jar)  | [1.21.8 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-fabric-1.15.0.jar)  | [1.21.8 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.15.0/baritone-api-neoforge-1.15.0.jar)  |
-| [1.21.9 Forge](https://github.com/cabaletta/baritone/releases/download/v1.16.0/baritone-api-forge-1.16.0.jar)  | [1.21.9 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.16.0/baritone-api-fabric-1.16.0.jar)  | [1.21.9 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.16.0/baritone-api-neoforge-1.16.0.jar)  |
-| [1.21.10 Forge](https://github.com/cabaletta/baritone/releases/download/v1.16.0/baritone-api-forge-1.16.0.jar) | [1.21.10 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.16.0/baritone-api-fabric-1.16.0.jar) | [1.21.10 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.16.0/baritone-api-neoforge-1.16.0.jar) |
-| [1.21.11 Forge](https://github.com/cabaletta/baritone/releases/download/v1.17.0/baritone-api-forge-1.17.0.jar) | [1.21.11 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.17.0/baritone-api-fabric-1.17.0.jar) | [1.21.11 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.17.0/baritone-api-neoforge-1.17.0.jar) |
-| [26.1 Forge](https://github.com/cabaletta/baritone/releases/download/v1.18.0/baritone-api-forge-1.18.0.jar)    | [26.1 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.18.0/baritone-api-fabric-1.18.0.jar)    | [26.1 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.18.0/baritone-api-neoforge-1.18.0.jar)    |
-| [26.2 Forge](https://github.com/cabaletta/baritone/releases/download/v1.19.0/baritone-api-forge-1.19.0.jar)    | [26.2 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.19.0/baritone-api-fabric-1.19.0.jar)    | [26.2 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.19.0/baritone-api-neoforge-1.19.0.jar)    |
-| [26.3 Forge](https://github.com/cabaletta/baritone/releases/download/v1.20.0/baritone-api-forge-1.20.0.jar)    | [26.3 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.20.0/baritone-api-fabric-1.20.0.jar)    | [26.3 NeoForge](https://github.com/cabaletta/baritone/releases/download/v1.20.0/baritone-api-neoforge-1.20.0.jar)    |
+New builds are signed with the same key (`keystore/debug.keystore`), so you can install
+updates over the old version and keep your saves.
 
-**How to immediately get started:** Type `#goto 1000 500` in chat to go to x=1000 z=500. Type `#mine diamond_ore` to mine diamond ore. Type `#stop` to stop. For more, read [the usage page](USAGE.md) and/or watch this [tutorial playlist](https://www.youtube.com/playlist?list=PLnwnJ1qsS7CoQl9Si-RTluuzCo_4Oulpa). Also try `#elytra` for Elytra flying in the Nether using fireworks ([trailer](https://youtu.be/4bGGPo8yiHo), [usage](https://youtu.be/NnSlQi-68eQ)). For help, join the [Baritone Discord Server](http://discord.gg/s6fRBAUpmr).
+## 2. Building it yourself
 
-For other versions of Minecraft or more complicated situations or for development, see [Installation & setup](SETUP.md). For 1.16.5, [click here](https://www.youtube.com/watch?v=_4eVJ9Qz2J8) and see description. Once Baritone is installed, look [here](USAGE.md) for instructions on how to use it. There's a [showcase video](https://youtu.be/CZkLXWo4Fg4) made by @Adovin#6313 on Baritone which I recommend. For help, join the [Baritone Discord Server](http://discord.gg/s6fRBAUpmr).
+Requirements: **JDK 17+** and the **Android SDK** (Android Studio installs both).
 
-This project is an updated version of [MineBot](https://github.com/leijurv/MineBot/),
-the original version of the bot for Minecraft 1.8.9, rebuilt for 1.12.2 onwards. Baritone focuses on reliability and particularly performance (it's over [30x faster](https://github.com/cabaletta/baritone/pull/180#issuecomment-423822928) than MineBot at calculating paths).
+```bash
+# 1. Point Gradle at your Android SDK (Android Studio does this automatically)
+echo "sdk.dir=/path/to/Android/Sdk" > local.properties
 
-Have committed at least once a day from Aug 1, 2018, to Aug 1, 2019.
+# 2. Run the tests (script check + a scripted playthrough to every ending)
+./gradlew testDebugUnitTest
 
-1Leijurv3DWTrGAfmmiTphjhXLvQiHg7K2
+# 3. Build the APK
+./gradlew assembleDebug
+#    -> app/build/outputs/apk/debug/app-debug.apk
 
-# Getting Started
-
-Here are some links to help to get started:
-
-- [Features](FEATURES.md)
-
-- [Installation & setup](SETUP.md)
-
-- [API Javadocs](https://baritone.leijurv.com/)
-
-- [Settings](https://baritone.leijurv.com/baritone/api/Settings.html#field.detail)
-
-- [Usage (chat control)](USAGE.md)
-
-## Stars over time
-
-[![Stargazers over time](https://starchart.cc/cabaletta/baritone.svg)](https://starchart.cc/cabaletta/baritone)
-
-# API
-
-The API is heavily documented, you can find the Javadocs for the latest release [here](https://baritone.leijurv.com/).
-Please note that usage of anything located outside of the `baritone.api` package is not supported by the API release
-jar.
-
-Below is an example of basic usage for changing some settings, and then pathing to an X/Z goal.
-
-```java
-BaritoneAPI.getSettings().allowSprint.value = true;
-BaritoneAPI.getSettings().primaryTimeoutMS.value = 2000L;
-BaritoneAPI.getProvider().getPrimaryBaritone().getCustomGoalProcess().setGoalAndPath(new GoalXZ(10000, 20000));
+# 4. Install over USB (USB debugging on)
+adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
-# FAQ
+Or open the folder in **Android Studio** and press ▶ Run.
 
-## Can I use Baritone as a library in my custom utility client?
+The test run also writes screenshots of every screen, background and CG to
+`app/build/screens/` and a WAV of the title theme, which is handy for checking art
+changes without a phone.
 
-That's what it's for, sure! (As long as usage complies with the LGPL 3.0 License)
+## 3. How to play
 
-## How is it so fast?
+| Control | What it does |
+|---|---|
+| **Tap the screen** or **A** | Advance text / pick the highlighted choice |
+| **Tap a choice** | Pick it directly |
+| **D-pad** | Move cursors; walk around the map; move the basket in the mini-game |
+| **Hold B** | Fast-forward text (skip) |
+| **SELECT** | Toggle auto-advance |
+| **START** or Android **Back** | Pause menu: Save, Load, Backlog, Auto, Skip to choice, Settings, Quit |
 
-Magic. (Hours of [leijurv](https://github.com/leijurv/) enduring excruciating pain)
+You can also drag on the screen to move the basket in the mini-game. Physical gamepads
+and keyboards work too (arrows/WASD, Z/Enter = A, X = B).
 
-### Additional Special Thanks To:
+**Each day:** pick a place on the town map (closed places are crossed out), play the
+date scene, and make 2–4 choices. Your choices raise or lower Reese's affection
+(0–100, shown as 5 hearts) and set hidden flags that unlock special scenes later.
+Visit **Pixel Mart** on the map to buy gifts; you get to offer one at the end of a date.
+Elijah earns $10 a day, plus a bit from mini-game scores.
 
-![YourKit-Logo](https://www.yourkit.com/images/yklogo.png)
+**Saving:** 3 save slots plus an autosave at the start of each day and each scene.
+**Continue** on the title screen loads your most recent save. Endings don't overwrite
+the autosave, so Continue after an ending lets you replay the finale.
 
-YourKit supports open source projects with innovative and intelligent tools for monitoring and profiling Java and .NET applications.
+## 4. Editing the story (no code needed)
 
-YourKit is the creator of the [YourKit Java Profiler](https://www.yourkit.com/java/profiler/), [YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/), and [YourKit YouMonitor](https://www.yourkit.com/youmonitor/).
+All dialogue lives in **`app/src/main/assets/script/story.json`**. Edit it, rebuild,
+done. (Run `./gradlew testDebugUnitTest` afterwards: it checks every label, scene,
+expression, background and song name, and plays through to all 5 endings.)
 
-We thank them for granting Baritone an OSS license so that we can make our software the best it can be.
+### File layout
+```jsonc
+{
+  "meta":      { "player_full_name": "Elijah Christan Breedlove", "player_name": "Elijah",
+                 "nickname": "Eli", "nickname_at": 70, "start_affection": 20, ... },
+  "locations": { "cafe": "Byte Cafe", ... },             // map names
+  "days":      [ { "name": "MONDAY", "spots": { "cafe": "d1_cafe", "park": "d1_park" } },
+                 ...,
+                 { "name": "SUNDAY", "forced": "d7_finale" } ],  // forced = no map that day
+  "shop":      [ { "id": "milk", "name": "Strawberry Milk", "price": 5, "desc": "..." } ],
+  "endings":   [ { "id": "best", "title": "Player 2", "text": "..." } ],
+  "scenes":    { "d1_cafe": [ ...commands... ], ... }
+}
+```
 
-## Why is it called Baritone?
+### Scene commands
+A scene is a list of commands. One command can combine several keys (they run in this
+order: `if` → effects → the action).
 
-It's named for FitMC's deep sultry voice.
+| Command | Meaning |
+|---|---|
+| `{"say":"reese","e":"happy","t":"Hi, {eli}!"}` | Reese speaks with an expression |
+| `{"say":"eli","e":"nervous","t":"Uh..."}` | Elijah speaks; his portrait slides in beside the line (box label: "Elijah") |
+| `{"say":"","t":"Narration..."}` | Narration (no name tag) |
+| `{"say":"Kenji","t":"..."}` | Any other speaker, name only |
+| `{"choice":[{"t":"Option","aff":5,"trait":"sweet","set":"flag","go":"label"}, ...]}` | 1–4 options. Each option can have `aff`, `set`, `unset`, `trait`, `coins`, `item`, `go`, and `if` (hide unless true) |
+| `{"label":"x"}` / `{"go":"x"}` | Jump inside the scene (`"go":"scene:name"` jumps to another scene) |
+| `{"call":"promise_ask"}` | Run another scene, then come back |
+| `{"if":"aff>=50 & promised", ...}` | Only run this command if the condition is true |
+| `{"aff":5}` `{"set":"flag"}` `{"unset":"flag"}` `{"trait":"goofy"}` `{"coins":10}` | Change state |
+| `{"bg":"park","music":"park"}` | Change background / music (`"music":null` = silence) |
+| `{"show":"blush"}` / `{"hide":true}` | Show Reese with an expression / hide her |
+| `{"fx":"shake"}` `"flash"` `"rain"` `"norain"`, `{"sfx":"heart_up"}` | Effects |
+| `{"title":"SUNDAY","sub":"Open Mic Night"}` | Full-screen title card |
+| `{"cg":"umbrella"}` | Show a CG (also unlocks it in the Gallery) |
+| `{"minigame":"hearts"}` | Play Heart Catch; the result is `score` |
+| `{"giftprompt":true}` | Offer a gift if Elijah has one (runs scene `gift_<itemid>`) |
+| `{"ending":"best"}` | Go to that ending |
+| `{"end":true}` | End the scene (next day) |
+
+**Text placeholders:** `{eli}` becomes "Elijah", or "Eli" once affection reaches
+`nickname_at` (70). `{full}` = full name, `{score}`, `{coins}`.
+
+**Conditions:** combine terms with `&` (and) and `|` (or):
+`flag`, `!flag`, `aff>=75`, `aff<35`, `score>=30`, `day==3`, `coins>=20`, `gifts>=2`,
+`trait:sweet` (Elijah's most-picked trait: `confident`, `sweet` or `goofy`),
+`has:tape` (in inventory), `gave:roses`.
+
+**Names you can use**
+- Reese expressions: `neutral happy blush surprised sad annoyed`
+- Elijah expressions: `neutral happy nervous determined`
+- Backgrounds: `cafe park sunset arcade rooftop school room ramen stage station black white`
+- Music: `title map cafe park arcade rooftop school room ramen brave sunset minigame ending sad credits`
+- CGs: `first_meet umbrella ramen_night high_score fountain_song` (+ `end_<ending id>`)
+- Sounds: `blip_eli blip_reese move select back heart_up heart_down catch bad buy gift start day shake door`
+
+### Adding a new scene
+1. Add `"my_scene": [ ... ]` under `"scenes"`.
+2. Hook it up to a day: `"days"[n].spots` → `"park": "my_scene"`, or jump to it with
+   `{"go":"scene:my_scene"}` / `{"call":"my_scene"}`.
+3. Finish it with `{"giftprompt": true}` (optional) and `{"end": true}`.
+
+### Changing art and music
+- **Sprites** (portraits, items, map icons) are text pixel art in
+  `app/src/main/assets/art/sprites.txt` (`.` = clear, `0`–`3` = lightest→darkest). You
+  can edit that file directly, or edit the Python sources in `tools/` and run
+  `python3 tools/gen_sprites.py` (needs Pillow only for the previews).
+- **Backgrounds and CGs** are drawn in code: `core/Backgrounds.kt`.
+- **Songs** are chord progressions + 8th-note melodies in `core/Synth.kt` (`SONGS`).
+
+## 5. The characters
+
+### Elijah Christan Breedlove (you)
+- **Who:** 20, moved to the seaside town of Maple Bay six months ago. Kind, a little
+  awkward around Reese at first, funny, and gets braver as the week goes on.
+- **Backstory:** makes chiptune music on his late grandpa's old handheld. Grandpa's
+  motto: *"Turn it up, kid. The world needs your noise."* He once coughed into a
+  microphone in seventh grade and has had stage fright ever since.
+- **Goal:** finish his album **BRAVE MODE** and play it live at the Neon Pixel Arcade's
+  **Open Mic 8-Bit Night** on Sunday, the last day of the game.
+- **Personality through choices:** every choice leans *confident*, *sweet* or *goofy*.
+  Reese notices which one you pick most and reacts to it before the show.
+
+### Reese
+- **Personality:** witty, a little shy, notices everything, deflects with jokes.
+- **Likes:** retro games, late-night ramen (*spicy miso, extra egg*, at Kenji's on 5th),
+  strawberry milk, cassette tapes, rainy days, Bit the stray cat.
+- **Dislikes:** cut flowers ("a countdown timer"), people who mock her drawings,
+  wrong ramen orders.
+- **Backstory:** grew up in her grandma's laundromat next to an old STAR LANCER arcade
+  cabinet. When grandma passed, the arcade took the cabinet in, and Reese visits it.
+  Works at Byte Café, studies art at Maple Bay College.
+- **Secret (revealed on Day 5 if she trusts you):** she is **R.PIX**, the anonymous
+  creator of *Lantern Fox*, a cult-hit homebrew game. It's missing one thing: music.
+- **Her dilemma:** a game studio in Seattle has offered her a summer internship.
+
+**Gifts:** Mixtape and Ramen Kit = **loves** · Cat Keychain and Strawberry Milk =
+**likes** · Rose Bouquet = **dislikes** (worse if you heard what she said about cut flowers).
+
+## 6. The 5 endings (spoilers!)
+
+<details><summary>How to unlock each ending</summary>
+
+| # | Ending | How |
+|---|---|---|
+| 1 | **Player 2** (Best) | Affection ≥ 75 on Sunday, don't break your promise, and confess on the rooftop |
+| 2 | **New Game+** (Secret) | Like Best, plus: affection ≥ 90, **remembered her ramen order** (Thu café), **kept the fountain promise** (promise on Wed, go to the park on Sat), **learned her secret** (Fri rooftop or park), **scored 30+ in Heart Catch**, and gave a **loved gift** (Mixtape or Ramen Kit) |
+| 3 | **Save File** (Long distance) | Promise to meet her Saturday, then don't show up (go to the café/arcade instead), with affection ≥ 55 |
+| 4 | **Co-op Mode** (Friends) | Affection 35–74, or stay quiet on the rooftop |
+| 5 | **Missed Connection** | Affection below 35 by Sunday: Reese isn't there |
+
+A route to the secret ending: Mon café → Tue arcade (score 30+) → Wed park (make the
+promise) → Thu café (spicy miso, extra egg) → Fri rooftop → Sat park, while buying the
+Ramen Kit and Mixtape at Pixel Mart and picking the warmest options.
+</details>
+
+## 7. Tech overview
+
+**Engine choice: Kotlin + Android Canvas.** A tiny custom engine instead of Godot means
+no export templates and no extra runtime, so the APK is under 1 MB and the GitHub
+Actions build is just `./gradlew assembleDebug`. All the game logic (`core/`) is plain
+Kotlin with no Android imports, so the same code runs in JVM unit tests that play the
+whole game and render screenshots.
+
+- **Resolution:** a 180×320 console canvas (the 160×144 "LCD" + the console body),
+  scaled up by a whole number with nearest-neighbor filtering. On a 1080×1920 phone
+  that's exactly ×6, and pixels stay crisp. A faint LCD grid is drawn when the scale is
+  ×4 or more.
+- **Portrait mode**, Android 8.0+ (API 26), fixed 60 Hz logic.
+- **Audio:** a home-made Game Boy-style synth (2 pulse channels, a 4-bit triangle wave
+  channel, LFSR noise drums, plus an effects voice) streamed through `AudioTrack`.
+  All 15 songs and 16 sound effects are generated in code.
+- **Saves:** JSON files in the app's private storage (`save_auto/1/2/3.json`,
+  `settings.json`, `gallery.json`), written atomically.
+- **Offline:** no permissions in the manifest at all.
+
+### Palette (19 colors)
+| Screen (4 shades × 4 selectable palettes) | |
+|---|---|
+| **CLASSIC** (default) | `#9BBC0F` `#8BAC0F` `#306230` `#0F380F` |
+| POCKET | `#C4CFA1` `#8B956D` `#4D533C` `#1F1F1F` |
+| SWEETHEART | `#FFE4EC` `#F29BB8` `#A34A72` `#3D1530` |
+| MIDNIGHT | `#E3EEC0` `#8FB3A8` `#4A6A8A` `#1E2244` |
+
+| Console body | |
+|---|---|
+| Body / shadow / highlight | `#C9C6BE` `#A9A59C` `#E3E0D8` |
+| Screen bezel / bezel shadow | `#5E5E70` `#48485A` |
+| D-pad / highlight | `#2E2E36` `#4A4A55` |
+| A·B buttons / highlight / pressed | `#A0285C` `#C4528A` `#7A1A44` |
+| Logo navy, stripe, LED, slots | `#283080` `#8C2850` `#E03C3C` `#7E7A72` |
+
+At any moment the screen shows 4 shades + 15 body colors = **19 colors**.
+
+### File tree
+```
+Reese/
+├── .github/workflows/build-apk.yml   CI: test + build + upload APK (+ release on v* tags)
+├── app/
+│   ├── build.gradle.kts
+│   └── src/
+│       ├── main/
+│       │   ├── AndroidManifest.xml   portrait, no permissions
+│       │   ├── assets/
+│       │   │   ├── script/story.json ★ all dialogue, days, shop, endings
+│       │   │   └── art/sprites.txt   all sprites as text pixel art
+│       │   ├── java/com/reese/game/
+│       │   │   ├── MainActivity.kt   activity, render view, touch, audio thread
+│       │   │   └── core/             pure Kotlin game (no Android imports)
+│       │   │       ├── Game.kt         console shell, input, screen stack, saves
+│       │   │       ├── Screens.kt      title, scene, map, shop, mini-game, menus, endings
+│       │   │       ├── Story.kt        script engine, conditions, game state
+│       │   │       ├── Backgrounds.kt  10 locations + 10 CGs drawn in code
+│       │   │       ├── Synth.kt        chiptune synth, songs, sound effects
+│       │   │       ├── Art.kt Scr.kt Font.kt Json.kt
+│       │   └── res/                  icon, theme
+│       └── test/java/com/reese/game/
+│           ├── StoryTest.kt          script lint + playthrough to all 5 endings
+│           └── ScreenshotTest.kt     drives the real UI, saves PNG screenshots
+├── tools/                            Python sources for the pixel art (gen_sprites.py)
+├── keystore/debug.keystore           shared debug signing key (password "android")
+└── docs/preview.png
+```
+
+## 8. Feature checklist
+
+Checked items are covered by the automated tests (`./gradlew testDebugUnitTest`), which
+play the real script to every ending and drive the real UI. The game has not been run on
+a physical phone yet. The Android layer (touch, audio output, back button) is
+the part that still needs a check on a device.
+
+**Tech**
+- [x] Kotlin + Android Canvas, Android 8.0+ (API 26), portrait
+- [x] Low-res canvas (160×144 LCD inside 180×320), integer nearest-neighbor scaling (×6 at 1080×1920)
+- [x] Fully offline: no internet permission, no ads, no accounts
+- [x] Build instructions + GitHub Actions workflow that outputs a signed APK
+
+**Art (Game Boy style)**
+- [x] Palette defined up front (19 colors; 4 selectable screen palettes)
+- [x] Every sprite is pixel art from code/text; no placeholder boxes
+- [x] Reese 32×48 portrait: neutral, happy, blushing, surprised, sad, annoyed + blink frame for each
+- [x] Elijah 32×48 portrait: neutral, happy, nervous, determined + blink; shown beside his lines
+- [x] Elijah overworld sprite (walk cycles down/up/side) on the town map
+- [x] Backgrounds: café, park, arcade, rooftop at night, school hallway (+ sunset park, bedroom, ramen shop, stage, train station)
+- [x] Retro text box, typewriter effect, blinking ▼, pixel font, heart meter in the corner
+
+**Audio**
+- [x] Chiptune music for every location (15 songs, generated in code)
+- [x] Text blips (low for Elijah, high for Reese), menu select/move, heart up/down jingles
+- [x] Music and SFX volume settings
+
+**Story & characters**
+- [x] Intro introduces Elijah Christan Breedlove (full name on the title screen, intro, performance, endings, credits) and how he meets Reese
+- [x] Dialogue boxes label him "Elijah"; Reese switches to "Eli" when affection ≥ 70
+- [x] Elijah's backstory and goal (BRAVE MODE / Open Mic) drive the plot
+- [x] Reese: personality, likes, dislikes, backstory, secret (R.PIX) revealed later
+- [x] Reese reacts to earlier choices (remembered orders, promise, dominant trait, gifts)
+- [x] Wholesome / PG
+
+**Gameplay**
+- [x] 7 days: pick a location → date scene with 2–4 choices → affection +/-
+- [x] Affection 0–100 shown as 5 hearts (half-heart steps)
+- [x] Hidden flags (ramen order, promise kept/broken, secret, high score, ...) unlock special scenes
+- [x] Mini-game: Heart Catch on arcade dates; score changes affection
+- [x] Gift shop with 5 items (loves / likes / dislikes)
+- [x] **5 endings**: Best, Secret, Long Distance, Friends, Missed Connection
+
+**Systems**
+- [x] Title screen with an animated logo: New Game, Continue, Load, Gallery, Settings
+- [x] 3 save slots + autosave, saved locally
+- [x] Gallery of unlockable CGs and endings (10)
+- [x] Skip (hold B / pause menu), auto-advance (SELECT), text speed, backlog
+- [x] Tap to advance, tap choices; Android back button opens the pause menu

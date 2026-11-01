@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.Reese" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/shell</item>
+        <item name="android:statusBarColor">@color/shell</item>
+        <item name="android:navigationBarColor">@color/shell</item>
+    </style>
+    <color name="shell">#FFC9C6BE</color>
+    <color name="screen">#FF9BBC0F</color>
+    <color name="ink">#FF0F380F</color>
+</resources>

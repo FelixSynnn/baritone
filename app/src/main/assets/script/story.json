@@ -1,0 +1,687 @@
+{
+  "meta": {
+    "title": "Reese",
+    "player_full_name": "Elijah Christan Breedlove",
+    "player_name": "Elijah",
+    "nickname": "Eli",
+    "nickname_at": 70,
+    "start_affection": 20,
+    "start_coins": 20,
+    "daily_coins": 10
+  },
+
+  "locations": {
+    "cafe": "Byte Cafe",
+    "park": "Maple Park",
+    "arcade": "Neon Pixel Arcade",
+    "rooftop": "Skyline Rooftop",
+    "school": "Maple Bay College"
+  },
+
+  "days": [
+    { "name": "MONDAY",    "spots": { "cafe": "d1_cafe", "park": "d1_park" } },
+    { "name": "TUESDAY",   "spots": { "school": "d2_school", "arcade": "d2_arcade", "cafe": "d2_cafe" } },
+    { "name": "WEDNESDAY", "spots": { "park": "d3_park", "cafe": "d3_cafe", "school": "d3_school" } },
+    { "name": "THURSDAY",  "spots": { "cafe": "d4_cafe", "arcade": "d4_arcade", "school": "d4_school" } },
+    { "name": "FRIDAY",    "spots": { "rooftop": "d5_rooftop", "park": "d5_park", "school": "d5_school" } },
+    { "name": "SATURDAY",  "spots": { "park": "d6_park", "cafe": "d6_cafe", "arcade": "d6_arcade" } },
+    { "name": "SUNDAY",    "forced": "d7_finale" }
+  ],
+
+  "shop": [
+    { "id": "milk",  "name": "Strawberry Milk", "price": 5,  "desc": "A pink carton. Sweet, cheap, classic." },
+    { "id": "cat",   "name": "Cat Keychain",    "price": 15, "desc": "A pixel cat charm. Looks a lot like a certain park stray..." },
+    { "id": "ramen", "name": "Ramen Kit",       "price": 20, "desc": "Deluxe spicy miso instant ramen. Midnight-snack approved." },
+    { "id": "tape",  "name": "Mixtape",         "price": 30, "desc": "A blank cassette. You'll record your own songs on it first." },
+    { "id": "roses", "name": "Rose Bouquet",    "price": 25, "desc": "A dozen red roses. Classic... maybe too classic?" }
+  ],
+
+  "endings": [
+    { "id": "best", "title": "Player 2",
+      "text": "Elijah played his song, said what he felt, and Reese said it right back. That summer he visited Seattle twice, and they beat Star Lancer together at 1 AM in a strange new arcade. Some co-op games never end." },
+    { "id": "secret", "title": "New Game+",
+      "text": "Lantern Fox 2 shipped the next spring, with music by Elijah Christan Breedlove. The credits ended with a hidden message only two people understood: SPICY MISO, EXTRA EGG. Player 2 never logged off." },
+    { "id": "distance", "title": "Save File",
+      "text": "Reese left for Seattle. Every Sunday a new song went west and a new sprite came back east. The save file stayed open. Some love stories just need a long loading screen." },
+    { "id": "friends", "title": "Co-op Mode",
+      "text": "Not every story ends in romance. Elijah and Reese became the kind of friends who text at midnight about ramen and boss fights. And honestly? That's its own kind of happy ending." },
+    { "id": "missed", "title": "Missed Connection",
+      "text": "Elijah played his song to a cheering crowd, but the one person he most wanted to hear it wasn't there. He learned, a little late, that being brave means saying the important things out loud. Try again?" }
+  ],
+
+  "scenes": {
+
+    "intro": [
+      { "bg": "black", "music": "room" },
+      { "title": "ELIJAH CHRISTAN BREEDLOVE", "sub": "composer. dreamer. slightly awkward." },
+      { "bg": "room" },
+      { "say": "", "t": "Six months ago, Elijah Christan Breedlove moved to the sleepy seaside town of Maple Bay." },
+      { "say": "", "t": "He brought three things: a duffel bag, a pair of headphones, and his late grandpa's old handheld." },
+      { "say": "eli", "e": "neutral", "t": "Grandpa used to say, \"Turn it up, kid. The world needs your noise.\"" },
+      { "say": "eli", "e": "nervous", "t": "...The world has not heard my noise. The world heard me cough into a microphone once. In seventh grade." },
+      { "say": "", "t": "His goal: finish his chiptune album, BRAVE MODE, and play it live at the Neon Pixel Arcade's Open Mic 8-Bit Night." },
+      { "say": "", "t": "That's this Sunday. Seven days away." },
+      { "say": "eli", "e": "determined", "t": "Seven days. I can become brave in seven days. Right? Right." },
+      { "say": "eli", "e": "neutral", "t": "First, coffee. Brave people drink coffee." },
+      { "bg": "cafe", "music": "cafe", "sfx": "door" },
+      { "say": "", "t": "Byte Cafe. Elijah backs through the door, headphones on, demo tape in hand, not looking where he's going..." },
+      { "fx": "shake", "say": "???", "t": "Whoa- HEADS UP!" },
+      { "show": "surprised", "say": "", "t": "He collides with someone. His cassette goes flying... and lands neatly in her apron pocket." },
+      { "say": "reese", "e": "surprised", "t": "...Nice shot. Is this yours? \"BRAVE MODE - DEMO.\"" },
+      { "say": "eli", "e": "nervous", "t": "Y-yes! That's mine. It's music. Chiptune. Beep-boop stuff. Not a mixtape for anyone. I mean-" },
+      { "say": "reese", "e": "happy", "t": "Beep-boop stuff is the best stuff. You make it on a real handheld? With the four-channel sound chip?" },
+      { "say": "eli", "e": "happy", "t": "...You know about the four-channel sound chip?" },
+      { "say": "reese", "e": "neutral", "t": "I know about a lot of things nobody asks me about. I'm Reese. I work here. Usually I don't tackle the customers." },
+      { "choice": [
+        { "t": "I'm Elijah. Tackle me anytime.", "aff": 3, "trait": "confident", "go": "i_conf" },
+        { "t": "I'm Elijah. Sorry I crashed!", "aff": 5, "trait": "sweet", "go": "i_sweet" },
+        { "t": "I'm Elijah. Don't worry, I respawn.", "aff": 4, "trait": "goofy", "go": "i_goofy" }
+      ] },
+      { "label": "i_conf", "say": "reese", "e": "blush", "t": "T-tackle you- okay! Bold opening move, Elijah. Noted." },
+      { "go": "i_after" },
+      { "label": "i_sweet", "say": "reese", "e": "happy", "t": "You crashed into ME and you're apologizing? You're way too nice for this town, Elijah." },
+      { "go": "i_after" },
+      { "label": "i_goofy", "say": "reese", "e": "happy", "t": "Ha! Good. No extra lives lost. Welcome to Byte Cafe, Elijah." },
+      { "label": "i_after", "cg": "first_meet" },
+      { "say": "reese", "e": "neutral", "t": "Here's your tape back. ...Hey. When it's finished, I want to hear it. Deal?" },
+      { "say": "eli", "e": "determined", "t": "D-deal." },
+      { "hide": true, "say": "", "t": "She vanishes behind the counter. Elijah forgets to order coffee. He doesn't even mind." },
+      { "title": "7 DAYS UNTIL OPEN MIC NIGHT", "sub": "Each day, pick a place on the map. Choose your words. Get to know Reese." }
+    ],
+
+    "d1_cafe": [
+      { "bg": "cafe", "music": "cafe", "show": "neutral" },
+      { "say": "reese", "e": "happy", "t": "Oh, it's the tape guy! Back for the coffee you forgot to order yesterday?" },
+      { "say": "eli", "e": "nervous", "t": "I was hoping nobody noticed that." },
+      { "say": "reese", "e": "neutral", "t": "I notice everything. It's my curse. So, what'll it be?" },
+      { "choice": [
+        { "t": "Strawberry milk, please.", "aff": 5, "trait": "sweet", "set": "ordered_milk", "go": "milk" },
+        { "t": "Whatever you'd recommend.", "aff": 4, "trait": "confident", "go": "rec" },
+        { "t": "One coffee. Extra pixels.", "aff": 6, "trait": "goofy", "set": "extra_pixels", "go": "pix" },
+        { "t": "Just water. I'm in a hurry.", "aff": -4, "go": "rush" }
+      ] },
+      { "label": "milk", "say": "reese", "e": "surprised", "t": "Strawberry milk? In a coffee shop? ...That's my favorite. Nobody ever orders it." },
+      { "say": "reese", "e": "blush", "t": "I'm giving you the good straw. Don't tell anyone." },
+      { "go": "next" },
+      { "label": "rec", "say": "reese", "e": "happy", "t": "A man who trusts the barista. Honey oat latte. If you hate it, I'll pretend I never knew you." },
+      { "go": "next" },
+      { "label": "pix", "say": "reese", "e": "happy", "t": "One coffee, rendered at full resolution. ...Ha! You're weird. I like weird." },
+      { "go": "next" },
+      { "label": "rush", "say": "reese", "e": "annoyed", "t": "Wow. Okay. One tap water, extra hurry. Coming right up." },
+      { "label": "next", "say": "", "t": "The cafe goes quiet. Reese leans on the counter, doodling tiny sprites on a napkin." },
+      { "say": "eli", "e": "neutral", "t": "Is that a fox? Holding a lantern?" },
+      { "say": "reese", "e": "surprised", "t": "Wha- nope! It's nothing. Napkin art. Totally meaningless napkin art." },
+      { "say": "reese", "e": "neutral", "t": "Anyway. Lunch rush is over, dinner rush never comes, and I've been dreaming about ramen since 10 AM." },
+      { "set": "heard_ramen", "say": "reese", "e": "happy", "t": "Kenji's on 5th. Spicy miso, extra egg. It hits different after midnight. Trust me." },
+      { "choice": [
+        { "t": "Midnight ramen? Sounds perfect.", "aff": 4, "trait": "confident" },
+        { "t": "Spicy miso, extra egg. Noted.", "aff": 5, "trait": "sweet" },
+        { "t": "I mostly eat cereal at midnight.", "aff": 2, "trait": "goofy" },
+        { "t": "Ramen's kind of overrated.", "aff": -5 }
+      ] },
+      { "say": "reese", "e": "neutral", "t": "Careful, tape guy. Keep coming in here and you'll become a regular." },
+      { "say": "eli", "e": "happy", "t": "It's Elijah." },
+      { "say": "reese", "e": "happy", "t": "I know. I just like watching you blink like that." },
+      { "giftprompt": true },
+      { "end": true }
+    ],
+
+    "d1_park": [
+      { "bg": "park", "music": "park" },
+      { "say": "", "t": "Maple Park. Elijah sits on a bench, scribbling melodies in a notebook. Then he hears a tiny meow." },
+      { "show": "happy", "say": "reese", "e": "happy", "t": "There you are, Bit! Did you miss me? Did you? Yes you did." },
+      { "say": "reese", "e": "surprised", "t": "Oh! Hi. You just watched me baby-talk a cat. Great. Cool. My reputation is gone." },
+      { "say": "eli", "e": "happy", "t": "Bit? Like a byte, but smaller?" },
+      { "set": "met_bit", "say": "reese", "e": "happy", "t": "Exactly! She's tiny, she's a stray, and she's the boss of this whole park." },
+      { "choice": [
+        { "t": "Can I pet her?", "aff": 5, "trait": "sweet", "go": "pet" },
+        { "t": "I'm more of a dog person.", "aff": -4, "go": "dog" },
+        { "t": "*meow at the cat*", "aff": 5, "trait": "goofy", "go": "meow" },
+        { "t": "Strays are her own business.", "aff": 2, "trait": "confident", "go": "cool" }
+      ] },
+      { "label": "pet", "say": "", "t": "Bit sniffs his hand... and headbutts it. Reese's eyes go wide." },
+      { "say": "reese", "e": "surprised", "t": "She NEVER does that! She hissed at the mail carrier for a full minute once." },
+      { "go": "after" },
+      { "label": "dog", "say": "reese", "e": "annoyed", "t": "...Bit heard that. Bit will remember that." },
+      { "go": "after" },
+      { "label": "meow", "say": "", "t": "Elijah meows. Bit meows back. Reese laughs so hard she has to sit down." },
+      { "say": "reese", "e": "happy", "t": "Okay, you speak fluent cat. That's a rare skill." },
+      { "go": "after" },
+      { "label": "cool", "say": "reese", "e": "neutral", "t": "Ha. Yeah. She lets you visit. That's the deal." },
+      { "label": "after", "say": "reese", "e": "neutral", "t": "Someone left roses on that bench this morning. They're already wilting. That always bums me out." },
+      { "set": "knows_flowers", "say": "reese", "e": "sad", "t": "Cut flowers are like... a countdown timer. Pretty, then gone. I'd rather have something that lasts." },
+      { "choice": [
+        { "t": "Like a song. Songs last.", "aff": 5, "trait": "confident" },
+        { "t": "I'll remember that.", "aff": 4, "trait": "sweet" },
+        { "t": "That's a little dramatic.", "aff": -4 }
+      ] },
+      { "say": "reese", "e": "blush", "t": "...Yeah. Like a song. Okay, I'm leaving before I say something even more dramatic." },
+      { "giftprompt": true },
+      { "say": "reese", "e": "happy", "t": "Bye, Elijah. Bye, Bit." },
+      { "hide": true, "say": "", "t": "Bit stares at Elijah. Elijah stares at Bit. He has been approved." },
+      { "end": true }
+    ],
+
+    "d2_school": [
+      { "bg": "school", "music": "school" },
+      { "say": "", "t": "Maple Bay College. Elijah heads to Music Theory and nearly trips over a pile of scattered papers." },
+      { "show": "sad", "say": "Some guy", "t": "Nice doodles, Reese! Gonna make a widdle video game? Beep beep!" },
+      { "say": "", "t": "A couple of guys laugh down the hall. Reese is on her knees, grabbing pages covered in pixel sketches." },
+      { "choice": [
+        { "t": "Help her pick them up.", "aff": 6, "trait": "sweet", "go": "help" },
+        { "t": "\"Those sprites are awesome.\"", "aff": 6, "trait": "confident", "go": "conf" },
+        { "t": "Pretend to be a museum guide.", "aff": 5, "trait": "goofy", "go": "museum" },
+        { "t": "Keep walking. Not your business.", "aff": -6, "go": "ignore" }
+      ] },
+      { "label": "help", "say": "", "t": "Elijah kneels and starts stacking pages, careful, like he's holding something rare." },
+      { "say": "reese", "e": "blush", "t": "...Thanks. You didn't have to do that." },
+      { "go": "after" },
+      { "label": "conf", "say": "eli", "e": "determined", "t": "Hey! These sprites are awesome. Four frames on that walk cycle? That's real animation." },
+      { "say": "", "t": "The hallway goes quiet. The laughing guys shuffle away." },
+      { "say": "reese", "e": "surprised", "t": "...You counted the frames?" },
+      { "go": "after" },
+      { "label": "museum", "say": "eli", "e": "happy", "t": "And on your left, folks, a priceless original. Note the bold use of four shades of green. No flash photography, please." },
+      { "say": "reese", "e": "happy", "t": "Pfft- stop! ...Okay, don't stop. Do the next one." },
+      { "go": "after" },
+      { "label": "ignore", "say": "", "t": "Elijah keeps walking. Behind him, a page slides across the floor and nobody picks it up." },
+      { "say": "reese", "e": "sad", "t": "...Oh. Hey, Elijah. Don't worry about it. I'm used to it." },
+      { "label": "after", "show": "neutral", "say": "reese", "e": "neutral", "t": "I draw game stuff. Characters, maps. Sometimes I put them into actual games. Tiny ones. Nobody plays them." },
+      { "say": "eli", "e": "neutral", "t": "I'd play them." },
+      { "say": "reese", "e": "blush", "t": "You don't even know if they're any good." },
+      { "choice": [
+        { "t": "If you made them, they're good.", "aff": 4, "trait": "sweet" },
+        { "t": "Then show me and I'll tell you.", "aff": 4, "trait": "confident" },
+        { "t": "I'm a pro game critic. 10/10.", "aff": 3, "trait": "goofy" }
+      ] },
+      { "say": "reese", "e": "happy", "t": "...Maybe someday. If you're lucky. Now go, before Ms. Okafor marks you late." },
+      { "giftprompt": true },
+      { "hide": true, "say": "", "t": "Elijah is definitely late. Totally worth it." },
+      { "end": true }
+    ],
+
+    "d2_arcade": [
+      { "bg": "arcade", "music": "arcade" },
+      { "say": "", "t": "The Neon Pixel Arcade. Bleeps, bloops, and popcorn. Reese is glaring at an old cabinet called STAR LANCER." },
+      { "show": "annoyed", "say": "reese", "e": "annoyed", "t": "Come ON. That was NOT a hit. Your hitbox is a liar, Star Lancer." },
+      { "say": "eli", "e": "happy", "t": "Bad run?" },
+      { "say": "reese", "e": "surprised", "t": "Elijah! Uh. Yes. This machine is thirty years old and it still cheats." },
+      { "say": "reese", "e": "neutral", "t": "It was my grandma's. It sat in her laundromat my whole childhood. When she passed, the arcade bought it so it wouldn't get scrapped." },
+      { "say": "reese", "e": "sad", "t": "I come here to visit it. Which sounds weird out loud." },
+      { "choice": [
+        { "t": "It's not weird. It's sweet.", "aff": 5, "trait": "sweet" },
+        { "t": "Then let's beat it. For her.", "aff": 5, "trait": "confident" },
+        { "t": "Hi, Star Lancer. Huge fan.", "aff": 4, "trait": "goofy" },
+        { "t": "Yeah, it's a little weird.", "aff": -5 }
+      ] },
+      { "say": "reese", "e": "happy", "t": "Okay, new plan. There's a two-player game in the back. HEART CATCH. Loser buys popcorn." },
+      { "say": "reese", "e": "neutral", "t": "Move left and right to catch the hearts. Dodge the broken ones. Sparkles are worth extra. Ready?" },
+      { "minigame": "hearts" },
+      { "if": "score>=30", "aff": 8, "set": "high_score", "go": "great" },
+      { "if": "score>=15", "aff": 4, "go": "ok" },
+      { "aff": -2, "go": "bad" },
+      { "label": "great", "cg": "high_score" },
+      { "say": "reese", "e": "surprised", "t": "{score} points?! You're a natural! ...Are you secretly a gamer? Is this a trap?" },
+      { "say": "eli", "e": "happy", "t": "I catch notes for a living. Hearts are basically notes." },
+      { "go": "end" },
+      { "label": "ok", "say": "reese", "e": "happy", "t": "{score} points! Not bad for a rookie. The popcorn's still on you, though." },
+      { "go": "end" },
+      { "label": "bad", "say": "reese", "e": "happy", "t": "{score} points. That's... a score! Don't worry, the first run is always for learning." },
+      { "say": "eli", "e": "nervous", "t": "I was learning so hard." },
+      { "label": "end", "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "Same time next week? Star Lancer won't defeat itself." },
+      { "end": true }
+    ],
+
+    "d2_cafe": [
+      { "bg": "cafe", "music": "cafe", "show": "neutral" },
+      { "say": "reese", "e": "neutral", "t": "We close in ten, but you can stay. You look like someone hiding from homework." },
+      { "say": "eli", "e": "nervous", "t": "I'm hiding from a sign-up sheet. Open Mic 8-Bit Night. Sunday. My name is on it. In pen." },
+      { "say": "reese", "e": "surprised", "t": "YOU signed up? To perform? On a stage? With a crowd?" },
+      { "say": "eli", "e": "nervous", "t": "Please stop listing the scary parts." },
+      { "choice": [
+        { "t": "I want to be brave for once.", "aff": 5, "trait": "confident", "set": "told_goal" },
+        { "t": "My grandpa would've wanted it.", "aff": 6, "trait": "sweet", "set": "told_goal" },
+        { "t": "I thought it was a pizza sign-up.", "aff": 3, "trait": "goofy", "set": "told_goal" },
+        { "t": "Honestly? I'll probably bail.", "aff": -4 }
+      ] },
+      { "if": "told_goal", "say": "reese", "e": "blush", "t": "That's... honestly really cool. I could never get up there. I get nervous when people look at my napkins." },
+      { "if": "told_goal", "say": "reese", "e": "happy", "t": "Okay. I'm coming Sunday. Front row. Holding a sign that says \"BEEP-BOOP.\"" },
+      { "if": "told_goal", "say": "eli", "e": "happy", "t": "That might be the nicest threat anyone's ever made." },
+      { "if": "!told_goal", "say": "reese", "e": "annoyed", "t": "Don't you dare. You have a sound chip and a dream. Bailing is not an option." },
+      { "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "Now get out, I have to mop. Goodnight, Elijah." },
+      { "end": true }
+    ],
+
+    "promise_ask": [
+      { "say": "reese", "e": "neutral", "t": "Hey, so... about your song. BRAVE MODE. Is it done?" },
+      { "say": "eli", "e": "nervous", "t": "Almost. The ending's missing. I can't figure out how it should feel." },
+      { "say": "reese", "e": "blush", "t": "Then play it for me first. Before Sunday. Saturday at sunset, by the park fountain. A private test run." },
+      { "choice": [
+        { "t": "I promise. Saturday, sunset.", "aff": 5, "trait": "confident", "set": "promised" },
+        { "t": "Pinky promise.", "aff": 6, "trait": "sweet", "set": "promised" },
+        { "t": "Pixel-pinky promise. Unbreakable.", "aff": 6, "trait": "goofy", "set": "promised" },
+        { "t": "I'll... try. No promises.", "aff": -5, "set": "no_promise" }
+      ] },
+      { "if": "promised", "say": "reese", "e": "happy", "t": "Then it's a promise. Don't you dare forget, {eli}. Saturday. Sunset. Fountain." },
+      { "if": "no_promise", "say": "reese", "e": "sad", "t": "Oh. Sure. No pressure. Forget I asked." }
+    ],
+
+    "d3_park": [
+      { "bg": "park", "music": "park", "fx": "rain" },
+      { "say": "", "t": "Wednesday. Rain rolls in out of nowhere. Elijah ducks under the big tree - and someone's already there." },
+      { "show": "surprised", "say": "reese", "e": "surprised", "t": "Elijah?! Did the weather app lie to you too?" },
+      { "say": "eli", "e": "happy", "t": "It said zero percent chance of rain. I believed it with my whole heart." },
+      { "say": "reese", "e": "happy", "t": "I actually love the rain. Everything goes quiet. Like the world hit pause." },
+      { "choice": [
+        { "t": "Open your umbrella for her.", "aff": 7, "trait": "sweet", "go": "umb" },
+        { "t": "Race you to the cafe!", "aff": 3, "trait": "confident", "go": "race" },
+        { "t": "Do a rain dance.", "aff": 4, "trait": "goofy", "go": "dance" },
+        { "t": "Complain about the rain.", "aff": -4, "go": "whine" }
+      ] },
+      { "label": "umb", "say": "", "t": "Elijah pops open his little umbrella. It's tiny. They have to stand very close." },
+      { "cg": "umbrella" },
+      { "say": "reese", "e": "blush", "t": "...This umbrella is about the size of a pancake." },
+      { "say": "eli", "e": "nervous", "t": "It's a cozy umbrella." },
+      { "go": "after" },
+      { "label": "race", "say": "", "t": "They sprint across the park. Reese wins by a mile, laughing, soaked to the bone." },
+      { "say": "reese", "e": "happy", "t": "Ha! Undefeated! ...Also, I can't feel my socks." },
+      { "go": "after" },
+      { "label": "dance", "say": "", "t": "Elijah does a rain dance. The rain gets harder. Reese is crying with laughter." },
+      { "say": "reese", "e": "happy", "t": "You made it WORSE! You have the opposite of powers!" },
+      { "go": "after" },
+      { "label": "whine", "say": "reese", "e": "annoyed", "t": "Wow. Okay. Didn't realize I was sharing a tree with a weather critic." },
+      { "label": "after", "call": "promise_ask" },
+      { "giftprompt": true },
+      { "fx": "norain", "hide": true, "say": "", "t": "The rain lets up. The sky turns gold. Elijah walks home grinning like an idiot." },
+      { "end": true }
+    ],
+
+    "d3_cafe": [
+      { "bg": "cafe", "music": "cafe", "show": "neutral" },
+      { "say": "", "t": "Byte Cafe, after closing. Reese flips the sign and slides into the booth across from Elijah." },
+      { "say": "reese", "e": "neutral", "t": "Can I tell you something embarrassing? I've never told anyone I want to make games. Like, for real. As a job." },
+      { "say": "reese", "e": "sad", "t": "My parents think it's a phase. Everyone at school thinks it's a joke." },
+      { "choice": [
+        { "t": "It's not a joke. It's your dream.", "aff": 6, "trait": "confident" },
+        { "t": "Thank you for telling me.", "aff": 5, "trait": "sweet" },
+        { "t": "A phase? Like a boss phase?", "aff": 2, "trait": "goofy" },
+        { "t": "Maybe have a backup plan?", "aff": -5 }
+      ] },
+      { "say": "reese", "e": "blush", "t": "...You're really easy to talk to. It's annoying. I'm supposed to be mysterious." },
+      { "call": "promise_ask" },
+      { "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "Okay, out. Go finish that song." },
+      { "end": true }
+    ],
+
+    "d3_school": [
+      { "bg": "school", "music": "school", "show": "annoyed" },
+      { "say": "", "t": "The library closed early, so Reese is studying in the hallway, surrounded by color theory notes." },
+      { "say": "reese", "e": "annoyed", "t": "If I see one more color wheel, I'm going to scream. In four shades." },
+      { "say": "eli", "e": "neutral", "t": "Want a study buddy?" },
+      { "choice": [
+        { "t": "I'll quiz you.", "aff": 5, "trait": "sweet" },
+        { "t": "Snack break first. Trust me.", "aff": 4, "trait": "confident" },
+        { "t": "Red. The answer is always red.", "aff": 3, "trait": "goofy" },
+        { "t": "Color theory sounds easy, though.", "aff": -5 }
+      ] },
+      { "say": "reese", "e": "happy", "t": "...Okay, you passed the vibe check. Sit." },
+      { "say": "", "t": "An hour flies by. Somewhere in there, Reese starts humming. It's the melody from his demo tape." },
+      { "say": "eli", "e": "nervous", "t": "Is that... my song?" },
+      { "say": "reese", "e": "blush", "t": "Maybe I listened to the tape before I gave it back. Maybe twice. Okay, eleven times." },
+      { "call": "promise_ask" },
+      { "giftprompt": true },
+      { "end": true }
+    ],
+
+    "d4_cafe": [
+      { "bg": "cafe", "music": "cafe", "show": "neutral" },
+      { "say": "reese", "e": "neutral", "t": "Long shift. My stomach is making noises like a dial-up modem." },
+      { "say": "reese", "e": "happy", "t": "Pop quiz! If you bought me ramen right now - hypothetically - what would I order?" },
+      { "choice": [
+        { "t": "Spicy miso, extra egg.", "aff": 8, "trait": "sweet", "set": "remembered_ramen", "go": "right" },
+        { "t": "Tonkotsu, no egg?", "aff": -3, "go": "wrong" },
+        { "t": "Shoyu with extra corn?", "aff": -3, "go": "wrong" },
+        { "t": "Uh... cereal?", "trait": "goofy", "go": "wrong" }
+      ] },
+      { "label": "right", "say": "reese", "e": "surprised", "t": "You REMEMBERED. I said that, like, one time on Monday!" },
+      { "say": "eli", "e": "happy", "t": "It was a very good sentence." },
+      { "say": "reese", "e": "blush", "t": "...Okay. Kenji's. Now. I'm buying. Don't argue." },
+      { "bg": "ramen", "music": "ramen", "say": "", "t": "Kenji's on 5th. Steam, paper lanterns, and two bowls of spicy miso with extra egg." },
+      { "cg": "ramen_night" },
+      { "say": "reese", "e": "happy", "t": "This is my favorite place in the whole world. You're the first person I've ever brought here." },
+      { "choice": [
+        { "t": "I'm honored. Really.", "aff": 5, "trait": "sweet" },
+        { "t": "Then I'm bringing you next time.", "aff": 5, "trait": "confident" },
+        { "t": "*slurps loudly in gratitude*", "aff": 4, "trait": "goofy" }
+      ] },
+      { "go": "end" },
+      { "label": "wrong", "say": "reese", "e": "annoyed", "t": "Bzzt. Wrong! I'm wounded. Spicy miso, extra egg. I'll forgive you... eventually." },
+      { "say": "reese", "e": "neutral", "t": "Bring it up again and I'll let you buy me a bowl as an apology." },
+      { "label": "end", "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "Thanks for hanging out, {eli}." },
+      { "end": true }
+    ],
+
+    "d4_arcade": [
+      { "bg": "arcade", "music": "arcade", "show": "happy" },
+      { "say": "reese", "e": "happy", "t": "Rematch! HEART CATCH. Same deal - loser buys popcorn." },
+      { "if": "high_score", "say": "reese", "e": "annoyed", "t": "And this time I'm not going easy on you, Mr. High Score." },
+      { "say": "eli", "e": "determined", "t": "Bring it on." },
+      { "minigame": "hearts" },
+      { "if": "score>=30", "aff": 8, "set": "high_score", "go": "great" },
+      { "if": "score>=15", "aff": 4, "go": "ok" },
+      { "aff": -2, "go": "bad" },
+      { "label": "great", "cg": "high_score" },
+      { "say": "reese", "e": "surprised", "t": "{score}?! That's it, I'm framing this score. You're officially my Player 2." },
+      { "go": "end" },
+      { "label": "ok", "say": "reese", "e": "happy", "t": "{score}! You're getting good. Dangerously good." },
+      { "go": "end" },
+      { "label": "bad", "say": "reese", "e": "happy", "t": "{score}... Hey, at least you're consistent. I respect consistency." },
+      { "label": "end", "say": "reese", "e": "neutral", "t": "Wanna know a secret about this place? The owner lets me fix the old cabinets after closing. I know every circuit in Star Lancer." },
+      { "choice": [
+        { "t": "Teach me sometime?", "aff": 5, "trait": "sweet" },
+        { "t": "That's seriously impressive.", "aff": 5, "trait": "confident" },
+        { "t": "So you're an arcade wizard.", "aff": 4, "trait": "goofy" },
+        { "t": "Isn't that kind of a nerd thing?", "aff": -5 }
+      ] },
+      { "say": "reese", "e": "blush", "t": "...Maybe. If you keep winning me popcorn." },
+      { "giftprompt": true },
+      { "end": true }
+    ],
+
+    "d4_school": [
+      { "bg": "school", "music": "school", "show": "surprised" },
+      { "say": "", "t": "Reese is standing by her locker, staring at her phone like it just bit her." },
+      { "say": "eli", "e": "neutral", "t": "Everything okay?" },
+      { "set": "knows_offer", "say": "reese", "e": "surprised", "t": "I got an email. From Lumen Games, in Seattle. They want me for a summer internship. At an actual game studio." },
+      { "say": "reese", "e": "sad", "t": "It starts in two weeks. Which means leaving Maple Bay. Leaving Bit. Leaving... everything." },
+      { "choice": [
+        { "t": "You have to go. It's your dream!", "aff": 6, "trait": "confident", "set": "supported_dream" },
+        { "t": "Whatever you choose, I'm with you.", "aff": 7, "trait": "sweet", "set": "supported_dream" },
+        { "t": "Seattle has great ramen, I hear.", "aff": 4, "trait": "goofy", "set": "supported_dream" },
+        { "t": "But... then I'd never see you.", "aff": -4, "set": "selfish" }
+      ] },
+      { "if": "supported_dream", "say": "reese", "e": "blush", "t": "...Thanks. I needed someone to say it out loud. I haven't decided yet. But thank you." },
+      { "if": "selfish", "say": "reese", "e": "sad", "t": "Yeah. That's... the hard part. I don't know what to do." },
+      { "giftprompt": true },
+      { "end": true }
+    ],
+
+    "reveal": [
+      { "say": "reese", "e": "neutral", "t": "Can I show you something? You have to promise not to make it weird." },
+      { "say": "", "t": "She pulls a battered handheld out of her hoodie. On the screen, a little fox holding a lantern walks through a dark forest." },
+      { "say": "eli", "e": "nervous", "t": "Wait. That's LANTERN FOX. The homebrew game. Everyone online is obsessed with it. Nobody knows who made it..." },
+      { "say": "eli", "e": "nervous", "t": "...R.PIX. Reese. Pixels. R.PIX!" },
+      { "set": "knows_secret", "say": "reese", "e": "blush", "t": "Surprise. That's me. That's my big secret." },
+      { "say": "reese", "e": "sad", "t": "If people knew it was me, they'd look at me differently. Lantern Fox is perfect because nobody knows it's just... me." },
+      { "say": "reese", "e": "neutral", "t": "The only thing it's missing is music. I never could find the right sound." },
+      { "choice": [
+        { "t": "\"Just you\" made something amazing.", "aff": 7, "trait": "confident" },
+        { "t": "Your secret's safe with me.", "aff": 7, "trait": "sweet" },
+        { "t": "Can I get your autograph?", "aff": 5, "trait": "goofy" }
+      ] },
+      { "say": "reese", "e": "happy", "t": "...I knew I could trust you. Don't ask me how. I just knew." }
+    ],
+
+    "noreveal": [
+      { "say": "reese", "e": "neutral", "t": "Can I show you something? It's kind of a big- ..." },
+      { "say": "reese", "e": "sad", "t": "Actually, never mind. Maybe someday. It's not a big deal." },
+      { "say": "", "t": "Whatever it was, she tucks it back into her hoodie pocket." }
+    ],
+
+    "d5_rooftop": [
+      { "bg": "rooftop", "music": "rooftop" },
+      { "say": "", "t": "Friday night. Reese texted a single word: \"ROOF?\" The arcade's rooftop is staff only. And apparently, Elijah." },
+      { "show": "neutral", "say": "reese", "e": "neutral", "t": "This is where I come to think. You can see the whole town from up here. And all the stars." },
+      { "say": "eli", "e": "happy", "t": "It's beautiful. It feels like standing inside a game's title screen." },
+      { "say": "reese", "e": "happy", "t": "Right?! That's exactly what I always think!" },
+      { "choice": [
+        { "t": "Point out the constellations.", "aff": 4, "trait": "confident" },
+        { "t": "Ask what she thinks about up here.", "aff": 5, "trait": "sweet" },
+        { "t": "Name a star after Bit.", "aff": 4, "trait": "goofy" },
+        { "t": "Check your phone.", "aff": -5 }
+      ] },
+      { "if": "aff>=50", "call": "reveal" },
+      { "if": "!knows_secret", "call": "noreveal" },
+      { "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "Sunday. Open Mic. I'll be there. And after... meet me back up here?" },
+      { "say": "eli", "e": "determined", "t": "I'll be here." },
+      { "end": true }
+    ],
+
+    "d5_park": [
+      { "bg": "sunset", "music": "sunset", "show": "happy" },
+      { "say": "", "t": "Sunset at Maple Park. Reese is sitting by the fountain, feeding Bit tiny pieces of tuna." },
+      { "say": "reese", "e": "happy", "t": "Bit says hi. Bit also says you owe her a snack." },
+      { "choice": [
+        { "t": "Pet Bit.", "aff": 3, "trait": "sweet" },
+        { "t": "Sit right next to Reese.", "aff": 4, "trait": "confident" },
+        { "t": "Bow to Bit, Queen of the Park.", "aff": 4, "trait": "goofy" },
+        { "t": "Shoo the cat away.", "aff": -6 }
+      ] },
+      { "if": "aff>=50", "call": "reveal" },
+      { "if": "!knows_secret", "call": "noreveal" },
+      { "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "See you tomorrow? Saturday's a big day, you know." },
+      { "end": true }
+    ],
+
+    "d5_school": [
+      { "bg": "school", "music": "brave" },
+      { "say": "", "t": "An empty practice room. Elijah plays BRAVE MODE for the hundredth time. The ending still falls flat." },
+      { "show": "neutral", "say": "reese", "e": "neutral", "t": "Knock knock. I heard beep-boops and followed them like a moth." },
+      { "say": "eli", "e": "nervous", "t": "The ending's wrong. It's supposed to feel brave, but it just sounds... scared." },
+      { "say": "reese", "e": "neutral", "t": "What's the song about? Like, really." },
+      { "choice": [
+        { "t": "Being scared and doing it anyway.", "aff": 6, "trait": "confident", "set": "song_truth" },
+        { "t": "Someone who makes this town home.", "aff": 8, "trait": "sweet", "set": "song_truth" },
+        { "t": "A frog who becomes a knight.", "aff": 3, "trait": "goofy" },
+        { "t": "It's not about anything.", "aff": -4 }
+      ] },
+      { "say": "reese", "e": "blush", "t": "...Then end it on a major chord. Go up instead of down. Brave things go up." },
+      { "say": "", "t": "He tries it. The last note rings out bright and hopeful. It's perfect." },
+      { "say": "eli", "e": "happy", "t": "Reese. You're a genius." },
+      { "say": "reese", "e": "happy", "t": "I know. Put it in the liner notes." },
+      { "giftprompt": true },
+      { "end": true }
+    ],
+
+    "d6_park": [
+      { "bg": "sunset", "music": "sunset" },
+      { "if": "promised", "go": "kept" },
+      { "say": "", "t": "Saturday at sunset. Elijah wanders into the park. Reese is by the fountain, sketching." },
+      { "show": "surprised", "say": "reese", "e": "surprised", "t": "Oh! Elijah. I didn't expect... I mean, hi." },
+      { "say": "eli", "e": "nervous", "t": "I finished the song. I wanted you to hear it first. Even though I never promised." },
+      { "say": "reese", "e": "blush", "t": "...You came anyway? Okay. Okay. Play it." },
+      { "go": "play" },
+      { "label": "kept", "set": "kept_promise", "aff": 6, "say": "", "t": "Saturday. Sunset. The fountain. Exactly as promised. Reese is already there, swinging her feet." },
+      { "show": "happy", "say": "reese", "e": "happy", "t": "You came! I mean - of course you came. I wasn't worried. I only checked the time forty times." },
+      { "say": "eli", "e": "determined", "t": "A promise is a promise. Ready for the world premiere?" },
+      { "label": "play", "music": "brave", "say": "", "t": "Elijah plays BRAVE MODE. Four little channels of sound bounce off the fountain and up into the orange sky." },
+      { "cg": "fountain_song" },
+      { "say": "reese", "e": "blush", "t": "..." },
+      { "say": "reese", "e": "blush", "t": "That ending. It goes up. You changed it." },
+      { "if": "song_truth", "say": "eli", "e": "determined", "t": "Someone told me brave things go up." },
+      { "say": "reese", "e": "happy", "t": "It's the best thing I've ever heard. And I've heard the Star Lancer high-score jingle ten thousand times." },
+      { "choice": [
+        { "t": "I wrote the ending for you.", "aff": 7, "trait": "confident" },
+        { "t": "I'm glad you heard it first.", "aff": 6, "trait": "sweet" },
+        { "t": "Encore? I only know one song.", "aff": 5, "trait": "goofy" }
+      ] },
+      { "giftprompt": true },
+      { "say": "reese", "e": "neutral", "t": "Tomorrow, you play it for everyone. And then... the rooftop. Don't forget." },
+      { "end": true }
+    ],
+
+    "d6_cafe": [
+      { "bg": "cafe", "music": "cafe" },
+      { "say": "", "t": "Saturday. Elijah spends the whole day at Byte Cafe polishing BRAVE MODE, headphones on, lost in the music." },
+      { "say": "", "t": "Reese isn't working today. The new barista draws a lopsided heart in his latte." },
+      { "if": "promised", "go": "broke" },
+      { "say": "", "t": "He finishes the song just before closing. It's ready. He's... almost ready." },
+      { "aff": 2, "say": "eli", "e": "determined", "t": "Tomorrow. Open Mic. I can do this." },
+      { "end": true },
+      { "label": "broke", "set": "broke_promise", "aff": -15, "say": "", "t": "When he finally takes off his headphones, it's dark outside. His phone buzzes." },
+      { "say": "", "t": "REESE: \"waited at the fountain. it's fine. good luck tmrw.\"" },
+      { "say": "eli", "e": "nervous", "t": "...The fountain. Saturday. Sunset. I promised." },
+      { "say": "eli", "e": "nervous", "t": "It's not fine. It's really not fine." },
+      { "end": true }
+    ],
+
+    "d6_arcade": [
+      { "bg": "arcade", "music": "arcade" },
+      { "say": "", "t": "Saturday. Elijah helps the arcade owner set up the stage for Open Mic. Cables, speakers, one very dusty disco ball." },
+      { "say": "Owner", "t": "You're on third tomorrow, kid. Don't puke on my speakers." },
+      { "say": "eli", "e": "nervous", "t": "No promises." },
+      { "if": "promised", "go": "broke" },
+      { "say": "", "t": "By evening the stage is ready. Elijah tests a few notes. They ring out across the empty arcade." },
+      { "aff": 2, "coins": 10, "say": "Owner", "t": "Here, kid. Ten bucks for the help. Buy yourself something nice." },
+      { "end": true },
+      { "label": "broke", "set": "broke_promise", "aff": -15, "say": "", "t": "It's past nine when he finally checks his phone. One message." },
+      { "say": "", "t": "REESE: \"waited at the fountain. it's fine. good luck tmrw.\"" },
+      { "say": "eli", "e": "nervous", "t": "No. No no no. Saturday. Sunset. The fountain. I PROMISED." },
+      { "say": "eli", "e": "nervous", "t": "...Some promise." },
+      { "end": true }
+    ],
+
+    "d7_finale": [
+      { "bg": "black", "music": null },
+      { "title": "SUNDAY", "sub": "Open Mic 8-Bit Night" },
+      { "bg": "stage", "music": "room", "say": "", "t": "The Neon Pixel Arcade is packed. Backstage, Elijah grips his grandpa's handheld with both shaking hands." },
+      { "say": "eli", "e": "nervous", "t": "Okay. Okay okay okay. Breathe. You've got this. You absolutely do not have this." },
+      { "if": "aff<35", "go": "alone" },
+      { "if": "broke_promise", "show": "sad", "say": "reese", "e": "sad", "t": "...Hey. I said I'd be here. So I'm here." },
+      { "if": "broke_promise", "say": "eli", "e": "nervous", "t": "Reese, about yesterday - I'm so sorry. I lost track of time. That's not an excuse. I'm just... sorry." },
+      { "if": "broke_promise", "say": "reese", "e": "sad", "t": "We can talk later. Go play your song." },
+      { "if": "broke_promise", "go": "stage" },
+      { "show": "happy", "say": "reese", "e": "happy", "t": "Psst. Front row, as promised. I didn't make one BEEP-BOOP sign. I made two." },
+      { "if": "trait:confident", "say": "reese", "e": "neutral", "t": "You've been bold all week, {eli}. You talked me into saying things I never say out loud. Go be bold out there." },
+      { "if": "trait:sweet", "say": "reese", "e": "blush", "t": "You've been so kind to me all week, {eli}. Now be kind to yourself. Go show them." },
+      { "if": "trait:goofy", "say": "reese", "e": "happy", "t": "You made me laugh every single day this week, {eli}. Go make them all smile like that." },
+      { "label": "stage", "choice": [
+        { "t": "Walk out there. Play BRAVE MODE.", "set": "brave", "aff": 5, "trait": "confident", "go": "play" },
+        { "t": "I... I can't do this.", "go": "cant" }
+      ] },
+      { "label": "cant", "say": "eli", "e": "nervous", "t": "I can't. What if I freeze? What if they laugh?" },
+      { "say": "reese", "e": "neutral", "t": "Then they laugh. And I'll be in the front row, not laughing. Just look at me the whole time. Okay?" },
+      { "choice": [
+        { "t": "...Okay. Just you.", "set": "brave", "aff": 3, "trait": "sweet", "go": "play" }
+      ] },
+      { "label": "alone", "say": "", "t": "He scans the crowd. The front row. The back. No Reese." },
+      { "say": "eli", "e": "nervous", "t": "...Right. Why would she come." },
+      { "choice": [
+        { "t": "Play anyway. For Grandpa.", "set": "brave", "trait": "confident", "go": "play" },
+        { "t": "Play anyway. For yourself.", "set": "brave", "trait": "sweet", "go": "play" }
+      ] },
+      { "label": "play", "hide": true, "music": "brave", "fx": "flash", "say": "", "t": "The lights hit. The crowd goes quiet. Elijah Christan Breedlove presses START." },
+      { "say": "", "t": "Two pulse waves, one wave channel, one noise channel. Everything he's got. The arcade fills with sound." },
+      { "say": "", "t": "The final chord goes up. Bright. Brave. The crowd ERUPTS." },
+      { "fx": "shake", "say": "Crowd", "t": "ENCORE! ENCORE! BEEP-BOOP! BEEP-BOOP!" },
+      { "say": "eli", "e": "happy", "t": "...I did it. I actually did it." },
+      { "bg": "rooftop", "music": "rooftop" },
+      { "if": "aff<35", "go": "missed" },
+      { "if": "broke_promise & aff>=55", "go": "distance" },
+      { "if": "broke_promise", "go": "friends_talk" },
+      { "if": "aff>=75", "go": "confess" },
+      { "go": "friends_talk" },
+
+      { "label": "confess", "show": "blush", "say": "", "t": "Later. The rooftop. The whole town glitters below, under a sky full of stars." },
+      { "say": "reese", "e": "blush", "t": "You were amazing, {eli}. Like, actually amazing. I cried. Don't tell anyone. I'll deny it." },
+      { "if": "knows_offer", "say": "reese", "e": "neutral", "t": "I made my decision about Seattle, by the way. But you go first. You look like you have something to say." },
+      { "if": "!knows_offer", "say": "reese", "e": "neutral", "t": "I have news, actually. A studio in Seattle offered me an internship. But you go first. You look like you have something to say." },
+      { "set": "knows_offer", "choice": [
+        { "t": "Reese... I like you. A lot.", "go": "say_it" },
+        { "t": "Say nothing. Enjoy the stars.", "go": "quiet" },
+        { "t": "Crack a joke.", "trait": "goofy", "go": "joke" }
+      ] },
+      { "label": "joke", "say": "eli", "e": "nervous", "t": "So... uh... come here often? To the... roof?" },
+      { "say": "reese", "e": "annoyed", "t": "{eli}. I swear. Are you ever serious?" },
+      { "choice": [
+        { "t": "Okay. Serious. I like you, Reese.", "go": "say_it" },
+        { "t": "Never. Seriousness is for bosses.", "go": "quiet" }
+      ] },
+      { "label": "say_it", "say": "eli", "e": "determined", "t": "I like you, Reese. You're the reason the song goes up at the end. You're the reason I was brave tonight." },
+      { "fx": "flash", "sfx": "heart_up", "say": "reese", "e": "surprised", "t": "..." },
+      { "if": "kept_promise & remembered_ramen & knows_secret & high_score & loved_gift & aff>=90", "go": "secret" },
+      { "say": "reese", "e": "blush", "t": "I like you too, Eli. Ever since you crashed into me. I'm taking the internship - but it's only for the summer." },
+      { "say": "reese", "e": "happy", "t": "So... come visit? Be my Player 2?" },
+      { "set": "nickname", "say": "eli", "e": "happy", "t": "Player 2 has joined the game." },
+      { "ending": "best" },
+
+      { "label": "secret", "say": "reese", "e": "blush", "t": "I like you too, Eli. So much. And... I have one more secret. The last one, I promise." },
+      { "say": "", "t": "She hands him her handheld. On the screen: a title card. LANTERN FOX 2. Below it, a blinking cursor. MUSIC BY: ________" },
+      { "say": "reese", "e": "happy", "t": "I told Lumen Games I'd take the job... if I could bring my composer. They said yes. So. Want the gig?" },
+      { "say": "eli", "e": "happy", "t": "Reese. I'd follow you to Seattle on foot." },
+      { "say": "reese", "e": "happy", "t": "You remembered my ramen order. You kept your promise. You kept my secret. You beat my high score. Of course it's you." },
+      { "ending": "secret" },
+
+      { "label": "quiet", "say": "", "t": "Elijah says nothing. They watch the stars until the string lights blink off one by one." },
+      { "say": "reese", "e": "neutral", "t": "...I'm going to Seattle for the summer, {eli}. I wanted you to be the first to know. You're my best friend in this town." },
+      { "say": "eli", "e": "happy", "t": "Then I'll be your best friend in every town." },
+      { "ending": "friends" },
+
+      { "label": "distance", "show": "sad", "say": "", "t": "Later. The rooftop. Reese is there - but she's standing by the railing, a train ticket in her hand." },
+      { "say": "reese", "e": "sad", "t": "You were incredible tonight. Really. I'm so proud of you." },
+      { "say": "reese", "e": "sad", "t": "I took the internship. Seattle. My train leaves Tuesday." },
+      { "say": "reese", "e": "neutral", "t": "Yesterday, waiting at that fountain... I realized I'm always waiting on people. I don't want to wait anymore. I want to go build something." },
+      { "choice": [
+        { "t": "I'll miss you. Will you write?", "go": "d_after" },
+        { "t": "Go. I'll send a song every week.", "go": "d_after" }
+      ] },
+      { "label": "d_after", "say": "reese", "e": "blush", "t": "...Send me songs. Every week. I'll send you sprites. Let's keep a save file going, okay? Don't you dare delete it." },
+      { "bg": "station", "music": "sad", "hide": true, "say": "", "t": "Tuesday. Maple Bay Station. Elijah hands her a cassette labeled \"BRAVE MODE - FOR REESE.\"" },
+      { "show": "sad", "say": "reese", "e": "blush", "t": "See you soon, Eli." },
+      { "ending": "distance" },
+
+      { "label": "friends_talk", "show": "happy", "say": "", "t": "Later. The rooftop. Reese is waiting with two cans of strawberry milk." },
+      { "say": "reese", "e": "happy", "t": "To the bravest beep-booper in Maple Bay! Cheers!" },
+      { "if": "broke_promise", "say": "reese", "e": "neutral", "t": "About yesterday... it's okay. I mean it. You were chasing your thing. I get it. I'm about to chase mine." },
+      { "say": "reese", "e": "neutral", "t": "I took that internship in Seattle. Just for the summer. I wanted you to know." },
+      { "set": "knows_offer", "choice": [
+        { "t": "Confess your feelings anyway.", "go": "f_conf" },
+        { "t": "Toast to her new adventure.", "aff": 3, "go": "f_toast" }
+      ] },
+      { "label": "f_conf", "say": "eli", "e": "nervous", "t": "Reese, I... I really like you." },
+      { "say": "reese", "e": "blush", "t": "Elijah... that means a lot. Honestly. But right now I think I need a co-op partner more than anything. Is that okay?" },
+      { "say": "eli", "e": "happy", "t": "Co-op is my favorite mode." },
+      { "ending": "friends" },
+      { "label": "f_toast", "say": "eli", "e": "happy", "t": "To Seattle. And to Reese, future legendary game dev." },
+      { "say": "reese", "e": "happy", "t": "And to Elijah, future legendary composer. Friends forever? Co-op mode?" },
+      { "ending": "friends" },
+
+      { "label": "missed", "hide": true, "say": "", "t": "Later. The rooftop. The string lights are on. The stars are out. Nobody else is here." },
+      { "say": "eli", "e": "nervous", "t": "She said the rooftop, after the show. ...Didn't she?" },
+      { "say": "", "t": "Maybe she never said it. Maybe he only wished she had. Below, the town hums along, getting on with its night." },
+      { "say": "eli", "e": "neutral", "t": "...Next time, Grandpa. Next time I'll be brave sooner." },
+      { "ending": "missed" }
+    ],
+
+    "gift_milk": [
+      { "show": "surprised", "say": "reese", "e": "surprised", "t": "Strawberry milk? For me?" },
+      { "if": "ordered_milk", "say": "reese", "e": "happy", "t": "You remembered it's my favorite! My only weakness, revealed." },
+      { "aff": 4, "say": "reese", "e": "happy", "t": "Thanks, {eli}. This is going straight into my bloodstream." }
+    ],
+    "gift_cat": [
+      { "show": "surprised", "say": "reese", "e": "surprised", "t": "A cat keychain! Wait..." },
+      { "if": "met_bit", "aff": 2, "say": "reese", "e": "happy", "t": "It looks exactly like Bit! The little grumpy eyebrows and everything!" },
+      { "aff": 6, "say": "reese", "e": "blush", "t": "I'm putting it on my bag right now. Thank you. Really." }
+    ],
+    "gift_ramen": [
+      { "show": "surprised", "say": "reese", "e": "surprised", "t": "A deluxe spicy miso ramen kit?! Do you know what you've done?!" },
+      { "if": "heard_ramen", "aff": 3, "say": "reese", "e": "blush", "t": "You actually listened when I rambled about ramen. Nobody listens when I ramble." },
+      { "aff": 8, "set": "loved_gift", "say": "reese", "e": "happy", "t": "Midnight snack: secured. You're the best, {eli}." }
+    ],
+    "gift_tape": [
+      { "show": "surprised", "say": "reese", "e": "surprised", "t": "A cassette? \"BRAVE MODE - SIDE B\"... Did you record your songs on this?" },
+      { "say": "eli", "e": "nervous", "t": "Just some rough tracks. You said you wanted to hear them, so..." },
+      { "aff": 10, "set": "loved_gift", "say": "reese", "e": "blush", "t": "...This is the best gift anyone has ever given me. I'm going to wear out the tape. Sorry in advance." }
+    ],
+    "gift_roses": [
+      { "show": "neutral", "say": "reese", "e": "neutral", "t": "Oh. Roses. Wow. That's... very red." },
+      { "if": "knows_flowers", "aff": -3, "say": "reese", "e": "annoyed", "t": "You remember what I said about cut flowers, right? The countdown timer thing?" },
+      { "aff": -6, "say": "reese", "e": "sad", "t": "Thank you. I know you meant well. I'll... put them in some water." }
+    ]
+  }
+}

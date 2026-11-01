@@ -1,0 +1,53 @@
+name: Build APK
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android@v3
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Test (script lint + a full playthrough to every ending)
+        run: ./gradlew testDebugUnitTest --no-daemon
+
+      - name: Build signed debug APK
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Rename APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk Reese.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Reese-apk
+          path: Reese.apk
+
+      - name: Upload screenshots from the test run
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: app/build/screens
+
+      # Push a tag like v1.0 to get a GitHub Release with the APK attached
+      # (easy to download straight from your phone's browser).
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Reese.apk
